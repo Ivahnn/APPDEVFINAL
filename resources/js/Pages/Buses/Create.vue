@@ -51,6 +51,8 @@ import TextInput from '@/Components/TextInput.vue'
                                 <TextInput
                                     id="capacity"
                                     type="number"
+                                    min="1"
+                                    max="80"
                                     v-model="form.capacity"
                                     required
                                 />
