@@ -5,6 +5,7 @@ import { defineProps, reactive } from 'vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 
+
 const props = defineProps(['locations']);
 const form = reactive({
   origin: "",
@@ -36,7 +37,7 @@ function submit() {
   <AuthenticatedLayout>
     <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="overflow-hidden ma-8 w-100 bg-red-200 rounded-lg border shadow-xs">
+        <div class="overflow-hidden ma-8 w-100 bg-sky-200 rounded-lg border shadow-xs">
           <div class="overflow-x-auto m-5">
             <form class="w-full max-w-sm" @submit.prevent="submit">
               <div class="mb-4">
@@ -78,4 +79,6 @@ function submit() {
       </div>
     </div>
   </AuthenticatedLayout>
+  
+
 </template>

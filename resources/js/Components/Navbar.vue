@@ -2,17 +2,16 @@
 import { Link } from '@inertiajs/vue3';
 </script>
 <template>
-<nav class="fixed top-0 z-50 w-full bg-gradient-to-b from-green-400 to-blue-400">
+<nav class="fixed top-0 z-50 w-full bg-gray-900">
   <div class="px-3 py-3 lg:px-5 lg:pl-3">
     <div class="flex items-center justify-between">
       <div class="flex items-center justify-start">
         <Link href="/dashboard" class="flex ml-2 md:mr-24">
-          <img src="/storage/partas_logo.png" class="h-8 mr-3" alt="FlowBite Logo" />
-          <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Partas Bus Inc</span>
+              <img src="../../../public/appdevlogo.png" class="h-12 mr-5" alt="FlowBite Logo" />
+             <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-white">Fake Bus Transport, Inc</span>
         </Link>
-        <span class="self-center text-xl text-green-800 font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Ticket Reservation System</span>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center"> 
           <div class="flex items-center ml-3">
             <div>
               <button type="button" class="flex text-white px-2 bg-blue-400 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">

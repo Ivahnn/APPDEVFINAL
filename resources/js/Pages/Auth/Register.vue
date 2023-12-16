@@ -5,6 +5,7 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
+import VueHcaptcha from '@hcaptcha/vue3-hcaptcha'
 
 const form = useForm({
     name: '',
@@ -13,7 +14,9 @@ const form = useForm({
     password_confirmation: '',
 });
 
-const submit = () => {
+const onVerify = (token) => {
+    // Handle verification success
+    // You can directly trigger form submission here or set a flag to indicate verification success
     form.post(route('register'), {
         onFinish: () => form.reset('password', 'password_confirmation'),
     });
@@ -99,5 +102,14 @@ const submit = () => {
                 </PrimaryButton>
             </div>
         </form>
+        <div class="mt-4">
+            <VueHcaptcha
+                sitekey="8f206d43-e7e2-48e3-87b4-becf63a7ca0b"
+                @verify="onVerify"
+                @expired="onExpire"
+                @challenge-expired="onChallengeExpire"
+                @error="onError"
+            ></VueHcaptcha>
+        </div>
     </GuestLayout>
 </template>

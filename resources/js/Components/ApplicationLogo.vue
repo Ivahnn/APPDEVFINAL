@@ -1,5 +1,5 @@
 <template>
-          <img src="/storage/partas_logo.png"  >
+<img src="../../../public/appdevlogo.png" style="width: 450px; height: auto;">
 
 
 </template>

@@ -15,17 +15,17 @@ defineProps({
 
 
 <template>
-<nav class="bg-gradient-to-b from-green-400 to-blue-400
-            fixed top-0 z-50 w-full bg-white border-b border-gray-200
+<nav class="bg-gradient-to-b from-gray-400 to-blue-400
+            fixed top-0 z-50 w-full bg-white border-b border-gray-900
             dark:bg-gray-800 dark:border-gray-700">
   <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
                 <div class="flex items-center justify-start">
                     <Link href="/" class="flex ml-2 md:mr-24">
-                    <img src="/storage/partas_logo.png" class="h-8 mr-3" alt="FlowBite Logo" />
-                    <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Partas Bus Inc</span>
+                    <img src="../../../public/appdevlogo.png" class="h-8 mr-3" alt="FlowBite Logo" />
+                    <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Fake Bus Inc</span>
                     </Link>
-                    <span class="self-center text-xl text-green-800 font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Ticket Reservation System</span>
+   
                 </div>
                 <div class="flex items-center">
                         <div v-if="canLogin" class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
@@ -69,26 +69,33 @@ defineProps({
   </div>
 </nav>
 
-<div class="p-6 dark:border-gray-700 mt-14 bg-blue-400">
+<div class="p-6 dark:border-gray-700 mt-14 bg-gray-900">
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://nr4kmtcwpy93.objectstorage.ap-tokyo-1.oci.customer-oci.com/n/nr4kmtcwpy93/b/bucket-20230809-1910/o/carousel1.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="../../../public/bus3.png" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://nr4kmtcwpy93.objectstorage.ap-tokyo-1.oci.customer-oci.com/n/nr4kmtcwpy93/b/bucket-20230809-1910/o/carousel1.png" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="../../../public/bus4.png" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://nr4kmtcwpy93.objectstorage.ap-tokyo-1.oci.customer-oci.com/n/nr4kmtcwpy93/b/bucket-20230809-1910/o/carousel2.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="../../../public/bus5.png" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://nr4kmtcwpy93.objectstorage.ap-tokyo-1.oci.customer-oci.com/n/nr4kmtcwpy93/b/bucket-20230809-1910/o/carousel3.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="../../../public/bus7.png" alt="">
         </div>
-        <div>
+
+        
+         <div>
             <Carousel />
         </div>
+        
+        
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://nr4kmtcwpy93.objectstorage.ap-tokyo-1.oci.customer-oci.com/n/nr4kmtcwpy93/b/bucket-20230809-1910/o/carousel1.png" alt="">
+        
+        <img class="h-auto max-w-full rounded-lg" src="../../../public/bus6.png" alt="">
+
         </div>
+
 
     </div>
 </div>

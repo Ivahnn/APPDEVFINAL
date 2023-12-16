@@ -6,6 +6,8 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
+import Carousel from '@/Components/Carousel.vue';
+
 
 defineProps({
     canResetPassword: {
@@ -30,6 +32,7 @@ const submit = () => {
 </script>
 
 <template>
+   
     <GuestLayout>
         <Head title="Log in" />
 
@@ -92,5 +95,6 @@ const submit = () => {
         </form>
 
     </GuestLayout>
+    
 
 </template>

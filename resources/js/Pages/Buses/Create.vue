@@ -7,6 +7,7 @@ import { reactive,ref } from 'vue'
 import InputLabel from '@/Components/InputLabel.vue'
 import TextInput from '@/Components/TextInput.vue'
 
+
   const form=reactive({
       code: "",
       capacity: "",
@@ -16,8 +17,6 @@ import TextInput from '@/Components/TextInput.vue'
   function submit() {
       router.post(route("bus.store"),form);
   }
-  
-
 
 </script>
 
@@ -30,7 +29,7 @@ import TextInput from '@/Components/TextInput.vue'
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-                <div class="overflow-hidden ma-8 w-100  bg-red-200 rounded-lg border shadow-xs">
+                <div class="overflow-hidden ma-8 w-100  bg-sky-200 rounded-lg border shadow-xs">
                     <div class="flex md:items-center m-6">
                             <form class="w-full max-w-sm"  @submit.prevent="submit">
                                 <div class="md:w-1/3">
@@ -66,4 +65,5 @@ import TextInput from '@/Components/TextInput.vue'
         </div>
 
     </AuthenticatedLayout>
+
 </template>

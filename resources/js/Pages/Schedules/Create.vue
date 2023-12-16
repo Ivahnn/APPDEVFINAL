@@ -6,6 +6,7 @@ import { reactive } from 'vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import TextInput from '@/Components/TextInput.vue';
 
+
 defineProps({
   routes: Object,
   buses: Object,
@@ -29,7 +30,7 @@ function submit() {
   <AuthenticatedLayout>
     <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="overflow-hidden ma-8 w-100 bg-red-200 rounded-lg border shadow-xs">
+        <div class="overflow-hidden ma-8 w-100 bg-sky-200 rounded-lg border shadow-xs">
           <div class="flex md:items-center m-6">
             <form class="w-full max-w-sm" @submit.prevent="submit">
               <div class="md:w-1/3">
@@ -82,4 +83,6 @@ function submit() {
       </div>
     </div>
   </AuthenticatedLayout>
+         
+
 </template>

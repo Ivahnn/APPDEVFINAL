@@ -5,6 +5,7 @@ import { defineProps, reactive } from 'vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 
+
 const props = defineProps({
   busroute: Object,
   locations: Object,
@@ -37,7 +38,7 @@ const update = () => {
   <AuthenticatedLayout>
     <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="overflow-hidden ma-8 bg-red-200 rounded-lg border shadow-xs">
+        <div class="overflow-hidden ma-8 bg-sky-200 rounded-lg border shadow-xs">
           <div class="overflow-x-auto m-8">
             <form @submit.prevent="update">
               <div class="mb-4">
@@ -75,4 +76,5 @@ const update = () => {
       </div>
     </div>
   </AuthenticatedLayout>
+
 </template>

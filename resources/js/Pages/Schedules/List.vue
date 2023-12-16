@@ -4,6 +4,7 @@ import { Head, Link, router } from '@inertiajs/vue3';
 import NavLink from '@/Components/NavLink.vue'
 import PrimaryButton from '@/Components/PrimaryButton.vue'
 
+
 defineProps({
     schedules: Object
 })
@@ -23,7 +24,7 @@ function destroy(id){
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-sky-200 overflow-hidden shadow-sm sm:rounded-lg">
                   <div class="p-3 ">
                     <Link :href="route('schedule.create')" class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-semibold px-3 py-2 rounded mx-2"
                             as="button">
@@ -35,11 +36,11 @@ function destroy(id){
                   </div>
 
 
-                    <div class="p-6 text-gray-900">
+                    <div class="p-6 text-black-900">
                         <div class="overflow-x-auto w-full">
                             <table class="w-full whitespace-no-wrap">
                             <thead>
-                            <tr class="text-xs font-semibold TableRowacking-wide text-left text-gray-500 uppercase bg-gray-50 border-b">
+                            <tr class="text-xs font-semibold TableRowacking-wide text-left text-gray-500 uppercase bg-sky-200 border-b">
                                 <th class="px-4 py-3">Departure Time</th>
                                 <th class="px-4 py-3">Arrival Time</th>
                                 <th class="px-4 py-3">Origin</th>
@@ -50,7 +51,7 @@ function destroy(id){
 
                             </tr>
                             </thead>
-                            <tbody class="bg-white divide-y" >
+                            <tbody class="bg-sky-200 divide-y" >
                                 <tr v-for="schedule in schedules" :key="schedule.id" class="border-b transition duration-300 ease-in-out hover:bg-neutral-300 dark:border-neutral-500 dark:hover:bg-neutral-600">
                                     <td>
                                     {{ schedule.departure_time }}
@@ -97,4 +98,6 @@ function destroy(id){
             </div>
         </div>
     </AuthenticatedLayout>
+
+
 </template>

@@ -8,6 +8,8 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
 import Sidebar from '@/Components/Sidebar.vue'
 import Navbar from '@/Components/Navbar.vue'
+import Footer from '@/Components/Footer.vue'; // Import the Footer component
+
 defineProps({
     count_reservation: Number
 })
@@ -16,10 +18,10 @@ defineProps({
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-900">
             <Navbar/>
             <Sidebar/>
-            <main class="bg-blue-400 shadow">
+            <main class="bg-white-400 shadow">
                 <div class="p-4 sm:ml-64">
                     <div class="p-4 mt-14">
                         <slot/>
@@ -28,4 +30,6 @@ defineProps({
             </main>
         </div>
     </div>
+    <Footer />
 </template>
+

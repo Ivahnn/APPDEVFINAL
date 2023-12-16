@@ -7,6 +7,7 @@ import TextInput from '@/Components/TextInput.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import { reactive,ref } from 'vue'
 
+
 const props = defineProps({
       bus: Object
   })
@@ -44,7 +45,7 @@ const props = defineProps({
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="overflow-hidden ma-8 w-100  bg-red-200 rounded-lg border shadow-xs">
+                <div class="overflow-hidden ma-8 w-100  bg-sky-200 rounded-lg border shadow-xs">
                     <div class="overflow-x-auto  mx-8 ">
                             <form @submit.prevent="update" >
                                 <InputLabel for="code" value="Code"/>
@@ -65,8 +66,9 @@ const props = defineProps({
                                 <TextInput
                                     id="capacity"
                                     type="number"
+                                    min="1"
+                                    max="80"
                                     v-model="form.capacity"
-
                                     required
                                 />
                                 <div class=" py-3 md:w-1/3">
@@ -79,4 +81,5 @@ const props = defineProps({
         </div>
 
     </AuthenticatedLayout>
+
 </template>
